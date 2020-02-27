@@ -72,7 +72,7 @@ def test_accuracy():
 def test_f1():
     label = np.array([1, 1, 0, 0])
     score = np.array([[0.2, 0.8], [0.6, 0.4], [0.7, 0.3], [0.3, 0.7]])
-    assert F1()(y_true, y_pred) == 0.5
+    assert F1()(label, score) == 0.5
 
 
 def test_cross_entropy():

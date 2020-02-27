@@ -43,7 +43,7 @@ class Precision(RankingMetric):
 
         :param y_true: The ground true label of each document.
         :param y_pred: The predicted scores of each document.
-        :return: Precision @ k
+        :return: Precision @ k.
         :raises: ValueError: k must be greater than 0.
         """
         if self._k <= 0:
